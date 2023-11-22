@@ -19,7 +19,9 @@ namespace Monogame_Part_1_title_textures_and_colours_assignment
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            _graphics.PreferredBackBufferWidth = 1000;
+            _graphics.PreferredBackBufferHeight = 689;
+            _graphics.ApplyChanges();
             base.Initialize();
         }
 
@@ -42,7 +44,7 @@ namespace Monogame_Part_1_title_textures_and_colours_assignment
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.DarkBlue);
 
             // TODO: Add your drawing code here
 
